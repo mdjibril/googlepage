@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Homepage</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-rows: 60px auto 100px;
+            height: 100vh;
+            align-items: center;
+        }
+
+        header {
+            display: grid;
+            justify-content: end;
+            grid-template-columns: auto auto auto auto;
+            align-items: center;
+            column-gap: 15px;
+        }
+
+        .link > a  {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        .apps {
+            width: 35px;
+            height: 35px;
+            border-radius: 5px;
+        }
+
+        .profile {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+
+        main {
+            display: grid;
+            justify-content: center;
+            width: 100%;
+        }
+
+        main > img {
+            margin: 10px auto;
+        }
+
+        input[type="search"] {
+            width: 100%;
+			padding: 10px;
+			border-radius: 30px;
+			font-size: 20px;
+        }
+
+        input[type="button"]{
+            padding: 10px;
+			background: #f8f9fa;
+			margin: 15px 10px;
+			border-radius: 5px;
+			border: #f8f9fa;
+        }
+
+        input[type="button"]:hover{
+			box-shadow: 5px 10px 15px 5px #dadce0;
+		}
+
+        input[type="search"]:focus{
+			box-shadow: 5px 10px 15px 5px #dadce0;
+		}
+        form > section {
+            text-align: center;
+        }
+
+        form {
+            width: 600px;
+        }
+
+        form > p {
+            text-align: center;
+        }
+
+        form a {
+            text-decoration: none;
+        }
+
+        form a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background-color: #f2f2f2;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 45px 45px;
+            align-items: center;
+        }
+
+        footer  > section {
+            padding-left: 20px;
+        }
+
+        footer > section:nth-child(1) {
+            border-bottom: 1px solid #70757a;
+        }
+
+        footer a {
+			color: #70757a;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .fold {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        .fold a {
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="wrapper">
+        <!-- start of header -->
+        <header>
+            <section class="link"><a href="#">Gmail</a></section>
+            <section class="link"><a href="#">Images</a></section>
+
+            <section><img src="image/profile.jpg" alt="" class="apps"></section>
+            <section><img src="image/profile.jpg" alt="" class="profile"></section>
+        </header>
+
+
+        <!-- start of main -->
+        <main>
+            <img src="image/googlelogo.png" alt="Google">
+            <form action="">
+                <input type="search" name="search" id="">
+                <section>
+                    <input type="button" value="Google Search">
+                    <input type="button" value="I'm feeling lucky">
+                </section>
+                <p>Google offered in: 
+                    <a href="#">Hausa</a>
+                    <a href="#">Igbo</a>
+                    <a href="#">Yoruba</a>
+                    <a href="#">Nigerian pidgin</a>
+                </p>
+            </form>
+        </main>
+
+        <!-- start of footer -->
+        <footer>
+            <section><a href="#">Nigeria</a></section>
+            <section class="fold">
+                <section class="left">
+                    <a href="#">About</a>
+                    <a href="#">Advertising</a>
+                    <a href="#">Bussines</a>
+                    <a href="#">How Search Works</a>
+                </section>
+                <section class="center">
+				    <a href="#">Carbon Neutral since 2007</a>
+                </section>
+                <section class="riight">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Setting</a>
+                </section>
+            </section>
+        </footer>
+
+    </section>
+</body>
+
+</html>
